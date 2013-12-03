@@ -1,0 +1,15 @@
+{
+    "name": "evert/staticsite",
+    "description": "A static site generator",
+    "require": {
+        "kzykhys/ciconia": "~1.0.0",
+        "leafo/lessphp": "~0.4.0",
+        "twig/twig": "~1.14.2"
+    },
+    "authors": [
+        {
+            "name": "Evert Pot",
+            "email": "evert@rooftopsolutions.nl"
+        }
+    ]
+}
