@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+$paths = [
+    // Top-level package.
+    __DIR__ . '/../vendor/autoload.php',
+
+    // Included as a dependency.
+    __DIR__ . '/../../../autoload.php',
+];
+
+foreach($paths as $path) {
+    if (file_exists($path)) {
+        require $path;
+        break;
+    }
+}
+
+$app = new Crispy\Console\Application('crispy','0.0.1');
+$app->run();

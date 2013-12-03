@@ -1,3 +1,9 @@
 # Composer
 vendor
 composer.lock
+
+# ViM
+.*.swp
+
+# Composer dependency binaries.
+bin/ciconia

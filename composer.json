@@ -1,15 +1,27 @@
 {
-    "name": "evert/staticsite",
+    "name": "evert/crispy",
     "description": "A static site generator",
     "require": {
-        "kzykhys/ciconia": "~1.0.0",
-        "leafo/lessphp": "~0.4.0",
-        "twig/twig": "~1.14.2"
+        "kzykhys/ciconia" : "~1.0.0",
+        "leafo/lessphp"   : "~0.4.0",
+        "twig/twig"       : "~1.14.2",
+        "symfony/console" : "~2.4.0"
     },
     "authors": [
         {
             "name": "Evert Pot",
             "email": "evert@rooftopsolutions.nl"
         }
+    ],
+    "autoload" : {
+        "psr-0" : {
+            "Crispy" : "lib/"
+        }
+    },
+    "config" : {
+        "bin-dir" : "bin/"
+    },
+    "bin" : [
+        "bin/crispy"
     ]
 }
